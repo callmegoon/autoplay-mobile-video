@@ -70,4 +70,16 @@
   background: url("../images/icon-play.png") no-repeat center center;
   background-size: 20px 20px;
 }
+.videoCredit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.videoCredit a {
+  color: #fff;
+  text-decoration: none;
+}
 /*# sourceMappingURL=global.css.map */
