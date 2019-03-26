@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Title Goes Here</title>
+  <meta name="description" content="Page description goes here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Name of App">
+  <link rel="icon" sizes="192x192" href="chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Name of App">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <link rel="stylesheet" href="library/css/global.css">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="hero--inner inner">
+      <h1 class="hero__title">
+        <span>Title Overlay</span>
+      </h1>
+      <div class="hero__video">
+        <!--
+          Pay attention to the attributes — 'playsinline' is critical for this to work on mobile, I believe 'muted' is too.
+          It's also critical not to use 'autoplay' — see the js function for autoplaying programattically instead.
+        -->
+        <video id="demoVideo" class="hero__demoVideo" preload="auto" poster="/library/video/demo-placeholder.jpg" title="Demo Video (plays inline, muted, on mobile)" playsinline muted loop>
+          <source src="/library/video/demo.mp4" type="video/mp4" />
+        </video>
+        <!--
+          Add our own play/pause button for accessibility so users can stop the video if the motion causes sickeness
+        -->
+        <span class="playPauseVideo">Pause Video or press 'escape'</span>
+      </div>
+    </div>
+  </div>
+  <script src="library/js/global.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+.hero {
+  width: 100%;
+  max-width: 1625px;
+  max-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+/* This is just an overlay on top of the video, but below the title */
+}
+.hero:after {
+  content: '';
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.hero--inner {
+  max-height: 100vh;
+}
+@media desktop {
+  .hero:hover .playPauseVideo {
+    opacity: 1;
+  }
+}
+.hero__title {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: sans-serif;
+  text-align: center;
+  z-index: 9;
+}
+.hero__video {
+  width: 100%;
+  max-height: 100vh;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.hero__demoVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.playPauseVideo {
+  color: #fff;
+  background: url("../images/icon-pause.png") no-repeat center center;
+  background-size: 15px 15px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-indent: -9999px;
+  outline: none;
+  z-index: 999;
+  cursor: pointer;
+}
+.playPauseVideo--paused {
+  background: url("../images/icon-play.png") no-repeat center center;
+  background-size: 20px 20px;
+}
+/*# sourceMappingURL=global.css.map */
